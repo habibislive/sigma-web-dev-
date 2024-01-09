@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: aquamarine;
+        }
+        .box::first-line{
+            background-color: rgb(194, 147, 238);
+        }
+        .boxes *{
+            
+            border: 2px solid black;
+        }
+        /* box,[data-color="primary"]{
+            margin-top: 45px;
+        } */
+        .boxes::before{
+            content: "i am a box";
+        }
+        .boxes::after{
+            content: "i am a box";
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, expedita. </div>
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum quis ut fugiat pariatur tempora hic, magni eaque earum deleniti velit debitis aperiam beatae nobis labore quo mollitia nam voluptatibus in cum quae aut fugit. At optio atque, perspiciatis dolore magni totam sed aut laboriosam perferendis illo sit voluptate earum, illum, nihil animi quod vero! Error provident accusantium tempore nemo cumque, perspiciatis fugiat recusandae inventore est. Impedit modi obcaecati expedita. Laboriosam in maxime dolore earum inventore reiciendis porro, ducimus nam natus omnis, maiores autem itaque distinctio harum id quam, minus aspernatur. Perspiciatis sequi ducimus voluptas unde minus sunt corrupti reiciendis.</div>
+        <div class="box">I am a box </div>
+    </div>
+    
+</body>
+</html>

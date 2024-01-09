@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorfull NAV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+        *:root {
+            --primary-color: rgb(87, 87, 187);
+            --text-color: white;
+            --secondary-color: rgb(208, 185, 230);
+            --color: var( --primary-color);
+            --defpad: 23px;
+            --defop: 10 
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            opacity: var(--defop);
+            list-style: none;
+            padding: 34px;
+            border: 2px solid var(--color);
+
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            /* padding: 12px 0px; */
+        }
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+        ul li:first-child:hover{
+            background-color: rgb(34, 44, 17);
+        }
+
+        ul li:hover {
+            background-color: brown;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
